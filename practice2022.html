@@ -7,36 +7,30 @@
     <title>靈寶寶練習檔2</title>
 </head>
 <body>
-    <form action = "form_action.php" method="get">
-        <h1>盜墓筆記調查</h1>
-        <label for="myname">寫下名字吧?</label>
-        <input type="text" id="myname" name="myname">
-        <br>
-        <br>
-        <label for="age">入坑多久了呢?</label>
-        <select id="age">
-            <option value="一年以下">一年以下</option>
-            <option value="一年">一年</option>
-            <option value="兩年">兩年</option>
-            <option value="三年">三年</option>
-            <option value="四年">四年</option>
-            <option value="五年">五年</option>
-            <option value="五年以上">五年以上</option>
-        </select>
-        <br>
-        <br>
-        <label for="male">男</label>
-        <input type="radio" id="male" name="sex">
-        <label for="female">女</label>
-        <input type="radio" id="female" name="sex">
-        <br>
-        <br>
-        <label for="remasrks">備註</label>
-        <br>
-        <textarea rows="4" id="remarks"></textarea>
-        <br>
-        <br>
-        <input type="submit" value="送出">
+    <form>
+        <h1>表單</h1>
+    <label for="name">報上姓名來</label>
+    <input type="text" id="myname" name="myname">
+    <br>
+    <br>
+    <label for="age">年級</label>
+    <select id="age">
+        <option value="高一">高一</option>
+        <option value="高二">高二</option>
+        <option value="高三">高三</option>
+    </select>
+    <br>
+    <br>
+    <p>性別</p>
+    <label for="male">男</label>
+    <input type="radio" id="male" name="sex">
+    <label for="female">女</label>
+    <input type="radio" id="female" name="sex">
+    <textarea rows="4" id="remarks"></textarea>
+    <br>
+    <br>
+    <input type="submit" value="送出">
+
     </form>
 </body>
 </html>
