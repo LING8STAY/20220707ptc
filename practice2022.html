@@ -5,34 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>靈寶寶練習檔2</title>
-    <style>
-        h3{
-            color: darkblue;
-        }
-    </style>
 </head>
 <body>
-    <article>
-        <section>
-            <h3>張起靈</h3>
-            <ul>
-                <li>張家末代族長</li>
-                <li>失魂症</li>
-                <li>百歲老人</li>
-                <li>麒麟寶血</li>
-                <il>生日:1883.11.15</il>
-            </ul>
-        </section>
-        <hr>
-        <section>
-            <h3>上官靈</h3>
-            <ul>
-                <li>上官家二女兒</li>
-                <li>跆拳道黑帶</li>
-                <li>輟學去雨村</li>
-                <li>生日:2006.05.24</li>
-            </ul>
-        </section>
-    </article>
+    <form action = "form_action.php" method="get">
+        <h1>盜墓筆記調查</h1>
+        <label for="myname">寫下名字吧?</label>
+        <input type="text" id="myname" name="myname">
+        <br>
+        <br>
+        <label for="age">入坑多久了呢?</label>
+        <select id="age">
+            <option value="一年以下">一年以下</option>
+            <option value="一年">一年</option>
+            <option value="兩年">兩年</option>
+            <option value="三年">三年</option>
+            <option value="四年">四年</option>
+            <option value="五年">五年</option>
+            <option value="五年以上">五年以上</option>
+        </select>
+        <br>
+        <br>
+        <label for="male">男</label>
+        <input type="radio" id="male" name="sex">
+        <label for="female">女</label>
+        <input type="radio" id="female" name="sex">
+        <br>
+        <br>
+        <label for="remasrks">備註</label>
+        <br>
+        <textarea rows="4" id="remarks"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="送出">
+    </form>
 </body>
 </html>
